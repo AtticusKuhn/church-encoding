@@ -67,3 +67,4 @@ export const encodeBoolean = (a: boolean): cBool => a ? True : False
 // decodeBoolean(False) // => false
 // ```
 export const decodeBoolean = (a: cBool): boolean => a(true)(false)
+// export const eqBool = (a: cBool) => (b: cBool): cBool

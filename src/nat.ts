@@ -80,6 +80,6 @@ export const encodeNumeral = (n: number): cNat => f => x => Array.apply(null, { 
 // ```
 export const decodeNumeral = (a: cNat): number => a<number>(b => b + 1)(0)
 export const factorial = (n: cNat): cNat => If<cNat>(eq(n)(zero))
-    (zero)
+    (one)
     (mult(n)
         (lazy(() => factorial(pred(n)))))
